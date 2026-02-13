@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(240, 154, 225);
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.botones {
+  position: relative;
+  width: 50vw;
+  height: 50vw;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+
+}
+
+.Valentin {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3vw;
+  font-family: 'Playwrite NZ Basic', cursive;
+  font-weight: 1200;
+}
+
+.imgvalen {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+
+}
+
+#intentos {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+}
+
+.botones button {
+  padding: 18px 35px;
+  font-size: 22px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff4da6;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+#randomBtn {
+  position: absolute;
+  top: 80px;
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-80px); opacity: 0; }
+}
+
+
+.gato-celebracion {
+  position: absolute;
+  width: 120px;
+  opacity: 0;
+  transform: scale(0) rotate(0deg);
+  animation: explosion 1s ease-out forwards;
+}
+
+@keyframes explosion {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+#celebracionOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#mensajeFinal {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  z-index: 2;
+}
+
+#fireworks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
