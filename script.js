@@ -66,14 +66,14 @@ function iniciarLluviaDeGatos() {
 
 const imagenes = [
   "img/gatoenamorado1.jpg",
-  "img/gatoduren.jpg",
-  "img/gatoenmesa.jpg",
-  "img/gatolloron.jpg",
-  "img/gatomolesto.jpg",
+  "img/gatoduren.jpeg",
+  "img/gatomesa.jpeg",
+  "img/gatolloron.jpeg",
+  "img/gatomolesto.jpeg",
   "img/gatoponido.jpg"
 ];
 
-const imagenFinal = "img/gatoarmado.jpg";
+const imagenFinal = "img/gatoarmado.jpeg";
 
 let intentos = 0;
 

@@ -21,6 +21,7 @@ body {
 .Valentin {
   display: flex;
   justify-content: center;
+  color: blueviolet;
   text-align: center;
   font-size: 3vw;
   font-family: 'Playwrite NZ Basic', cursive;
@@ -28,11 +29,12 @@ body {
 }
 
 .imgvalen {
-  display: flex;  
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-
 }
+
+
 
 #intentos {
   display: flex;
